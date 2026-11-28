@@ -1,0 +1,146 @@
+L2 = !([SP+216])
+if !(!(L2)):
+goto state_0xd
+L2 = [[SP+216]+16]32_u
+if !((L2 == 0x83c733b)):
+goto state_9
+if !((0x4ef60 == [SP+216])):
+goto state_0xd
+[SP] = 1
+CALL main.R3nNAl
+L2 = [SP+8]
+[SP+184] = L2
+[SP] = 1
+CALL main.R3nNAl
+L2 = [SP+0x70]
+L3 = [SP+8]
+L2 = L2
+L4 = [SP+0x70+8]
+[SP+64] = L4
+L5 = 0
+L6 = [SP+184]
+goto state_0x11
+if !((L2 == 0xb49d0978)):
+goto state_0xd
+if !((0x4ef40 == [SP+216])):
+goto state_0xd
+[SP+0xe8]8 = 1
+RETURN
+[SP+0xe8]8 = 0
+RETURN
+L2 = ([SP+200] + 0x10)
+L5 = ([SP+56] + 1)
+L4 = [SP+64]
+L3 = [SP+152]
+L6 = [SP+192]
+[SP+168] = L3
+if !((L5 < L4)):
+goto state_0x46
+[SP+56] = L5
+[SP+184] = L6
+L2 = L2
+[SP+200] = L2
+L3 = [L2]
+[SP+48] = L3
+L2 = [L2+8]
+[SP+160] = L2
+[SP] = L3
+[SP+8] = L2
+CALL main.Kd5oA2q
+if !([SP+0x10]8_u):
+goto state_0x44
+L2 = !([SP+48])
+if !(!(L2)):
+goto state_0x25
+L2 = [[SP+48]+16]32_u
+if !((L2 == 0x83c733b)):
+goto state_0x1e
+if !((0x4ef60 == [SP+48])):
+goto state_0x25
+L2 = [SP+0x60]
+goto state_0x26
+if !((L2 == 0xb49d0978)):
+goto state_0x25
+if !((0x4ef40 == [SP+48])):
+goto state_0x25
+[SP] = 2
+CALL main.R3nNAl
+L2 = [SP+8]
+goto state_0x26
+L2 = 0
+[SP+192] = L2
+[SP] = L2
+[SP+8] = [SP+184]
+CALL f3254
+if ([SP+0x10] < 0):
+goto state_0x42
+[SP] = [SP+168]
+[SP+8] = [SP+192]
+CALL f3258
+L2 = [SP+0x90]
+L3 = [SP+0x88]
+L4 = [SP+0x70]
+L5 = [SP+0x70+8]
+L6 = [SP+0x70+16]
+L7 = [SP+0x10]
+[SP+152] = L7
+[SP] = L2
+[SP+8] = L3
+[SP+0x10] = L4
+[SP+0x18] = L5
+[SP+0x20] = L6
+CALL f3268
+if !([SP+0x28]8_u):
+goto state_0x40
+[SP] = 2
+CALL main.R3nNAl
+L2 = [SP+8]
+goto state_0x3a
+[SP] = 1
+CALL main.R3nNAl
+[SP] = [SP+176]
+CALL f3256
+L2 = [SP+0x10]
+[SP+176] = L2
+L3 = [SP+0x90]
+[SP] = L2
+[SP+8] = L3
+CALL f3254
+if !(([SP+0x10] < 0)):
+goto state_0xf
+L2 = [SP+0x88]
+L3 = [SP+0x70]
+L4 = [SP+0x70+8]
+L5 = [SP+0x70+16]
+[SP] = [SP+176]
+[SP+8] = L2
+[SP+0x10] = L3
+[SP+0x18] = L4
+[SP+0x20] = L5
+CALL f3268
+if [SP+0x28]8_u:
+goto state_0x52
+goto state_0x35
+[SP+0xe8]8 = 0
+RETURN
+[SP+0xe8]8 = 0
+RETURN
+[SP+0xe8]8 = 0
+RETURN
+[SP] = 1
+CALL main.R3nNAl
+[SP] = [SP+0x88]
+CALL f3257
+L2 = [SP+0x10]
+[SP] = [SP+168]
+[SP+8] = L2
+CALL f3254
+if !(!([SP+0x10])):
+goto state_0x51
+[SP+0xe8]8 = 1
+RETURN
+[SP+0xe8]8 = 0
+RETURN
+[SP+0xe8]8 = 0
+RETURN
+UNREACHABLE

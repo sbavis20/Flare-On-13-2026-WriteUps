@@ -1,0 +1,31 @@
+[SP] = 0x1b2a0
+[SP+8] = 0
+CALL f205
+L2 = [SP+16]
+[SP+56] = L2
+L2 = [0x211650]
+[SP+48] = L2
+L2 = [0x211658]
+[SP+64] = L2
+[SP] = 0x4bb00
+CALL syscall/js.EXeB_y6e
+L2 = [SP+0x20]32_u
+L3 = [SP+8]
+L4 = [SP+0x10]
+L5 = [SP+0x18]
+[SP+0x48] = L3
+[SP+0x50] = L4
+[SP+0x58] = L5
+[SP+0x60]32 = L2
+[SP] = [SP+48]
+[SP+8] = [SP+64]
+[SP+0x10] = 0x42376
+[SP+0x18] = 5
+[SP+0x20] = 0x3e2e0
+[SP+0x28] = SP+0x48
+CALL syscall/js.Btq2zNNk1n.Set
+[SP] = [SP+56]
+[SP+8] = 0
+CALL f217
+RETURN
+UNREACHABLE

@@ -1,0 +1,59 @@
+if !([SP+8]):
+CALL f671
+L2 = [[SP+8]+16]
+if !(!(L2)):
+goto state_0xe
+if !([SP+16]):
+CALL f671
+L3 = [[SP+16]+16]
+if !(!(L3)):
+goto state_0xe
+[SP+0x18] = 0
+RETURN
+if !([SP+16]):
+CALL f671
+L3 = [[SP+8]]8_u
+L4 = [[SP+16]]8_u
+if (L3 != L4):
+goto state_0x1c
+L4 = [[SP+16]+16]
+if (L2 != L4):
+goto state_0x18
+L4 = [[SP+8]+8]
+L5 = [[SP+16]+8]
+L2 = (L2 + -1)
+goto state_0x26
+if !((L2 < L4)):
+goto state_0x1b
+L2 = -1
+goto state_0x20
+L2 = 1
+goto state_0x20
+if !(L3):
+goto state_0x1f
+[SP+0x18] = -1
+RETURN
+[SP+0x18] = 1
+RETURN
+if !(L3):
+goto state_0x23
+[SP+0x18] = (0 - L2)
+RETURN
+[SP+0x18] = L2
+RETURN
+L2 = (L2 + -1)
+if !((0 <= L2)):
+goto state_0x2c
+L6 = [(L4 + L2)]8_u
+L7 = [(L5 + L2)]8_u
+if !((L6 != L7)):
+goto state_0x24
+if !((L6 <u L7)):
+goto state_0x2b
+L2 = -1
+goto state_0x20
+L2 = 1
+goto state_0x20
+L2 = 0
+goto state_0x20
+UNREACHABLE
